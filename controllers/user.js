@@ -1,4 +1,4 @@
-const jwt = require("jwt");
+const jwt = require("jsonwebtoken");
 const User = require("../models/user");
 const sharp = require("sharp");
 const cloudinary = require("../helper/imageUpload");

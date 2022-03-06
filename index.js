@@ -1,9 +1,9 @@
 const express = require("express");
-require("dotenv/config");
-// require('./models/db');
-// const userRouter = require('./routes/user');
+require("dotenv").config();
+require("./models/db");
+const userRouter = require("./routes/user");
 
-// const User = require('./models/user');
+const User = require("./models/user");
 
 const app = express();
 
@@ -35,5 +35,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("port is listening");
+  console.log("port 8000 is listening");
 });
